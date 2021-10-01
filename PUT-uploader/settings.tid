@@ -1,0 +1,8 @@
+title: $:/plugins/sq/file-uploads-PUT/settings
+
+@@color:red;''Highly experimental - no support available''@@ 
+
+[[Path of Upload directory relative to document|$:/config/file-uploads/PUT/uploadpath]]: 
+<$edit-text tiddler="$:/config/file-uploads/PUT/uploadpath" field="text" tag="input" />
+
+''The folder specified must already exist.''
