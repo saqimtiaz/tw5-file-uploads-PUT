@@ -51,7 +51,7 @@ callback accepts two arguments:
 PUTUploader.prototype.uploadFile = function(uploadItem,callback) {  
 	var self = this,
 		uploadInfo = { title: uploadItem.title },
-		data = uploadItem.getBlob();
+		data = uploadItem.isBase64 ? uploadItem.getBlob() : uploadItem.text;
 
 	var canonical_uri = this._getCanonicalURI(uploadItem),
 		headers = $tw.wiki.getTiddlerText("$:/config/file-uploads/PUT/severtype","PUT").trim().toLowerCase() === "node.js" ? { "X-Requested-With": "TiddlyWiki" } : {};
