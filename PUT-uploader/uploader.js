@@ -54,7 +54,7 @@ PUTUploader.prototype.uploadFile = function(uploadItem,callback) {
 		data = uploadItem.isBase64 ? uploadItem.getBlob() : uploadItem.text;
 
 	var canonical_uri = this._getCanonicalURI(uploadItem),
-		headers = $tw.wiki.getTiddlerText("$:/config/file-uploads/PUT/severtype","PUT").trim().toLowerCase() === "node.js" ? { "X-Requested-With": "TiddlyWiki" } : {};
+		headers = $tw.wiki.getTiddlerText("$:/config/file-uploads/PUT/servertype","PUT").trim().toLowerCase() === "node.js" ? { "X-Requested-With": "TiddlyWiki" } : {};
 	//convert to using $tw.utils.httpRequest https://github.com/Jermolene/TiddlyWiki5/blob/master/core/modules/savers/put.js#L83
 	fetch(canonical_uri,{
 		"method": "PUT",
