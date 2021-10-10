@@ -1,0 +1,12 @@
+{
+	"title": "$:/plugins/sq/node-files-PUT-support",
+	"description": "EXPERIMENTAL node.js support for PUT uploader",
+	"name": "Node.js files PUT uploader support",
+	"author": "Saq Imtiaz",
+	"core-version": ">=5.1.23",
+	"plugin-priority": 0,
+	"list": "readme",
+	"dependents": "$:/plugins/sq/file-uploads-PUT $:/plugins/commons/file-uploads",
+	"parent-plugin": "$:/plugins/commons/file-uploads",
+	"version": "0.1.1"
+}

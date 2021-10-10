@@ -1,0 +1,7 @@
+title: $:/plugins/sq/node-files-PUT-support/readme
+
+@@color:red;''Highly experimental - no support available. Use at your own risk.''@@ 
+
+* PUT support for the files directory on node.js. Allows the PUT uploader to be used with ~TiddlyWiki on node.js
+** Enables PUT requests to save files to the `files` directory that is server by the TW node.js server
+* The directory for uploaded files must be set to `files` (the default).
